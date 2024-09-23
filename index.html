@@ -67,18 +67,18 @@
     </nav>
     <div class="flex gap-4 justify-center lg:pt-9 pt-3 pb-8 bg-white">
       <div>
-        <button id="donation-money" class="bg-blog_btn_color px-8 py-2 rounded-md text-xl font-semibold">Donation</button>
+        <button id="donation-btn" class="border text-common_gray_color bg-blog_btn_color px-8 py-2 rounded-md text-xl font-semibold">Donation</button>
       </div>
       <div>
-        <button class="border text-common_gray_color px-8 py-2 rounded-md text-xl font-semibold">History</button>
+        <button id="history-btn" class="border text-common_gray_color px-8 py-2 rounded-md text-xl font-semibold">History</button>
       </div>
     </div>
   </header>
 
   <!-- header section -->
   <main>
-    <section class="max-w-screen-lg mx-auto">
-      <div class="grid lg:grid-cols-2 gap-8 px-8 py-8 border rounded-xl">
+    <section id="home-main" class="max-w-screen-lg mx-auto mb-16">
+      <div class="grid lg:grid-cols-2 gap-8 px-8 py-8 border rounded-xl mb-8">
         <div>
           <img src="assets/noakhali.png" alt="">
         </div>
@@ -105,10 +105,8 @@
           <button id="add-money-btn-1" class="bg-blog_btn_color px-8 py-2 rounded-md text-xl font-semibold w-full mt-4">Donate Now</button>
         </div>
       </div>
-    </section>
 
-    <section class="max-w-screen-lg mx-auto">
-      <div class="grid lg:grid-cols-2 gap-8 px-8 py-8 border rounded-xl">
+      <div class="grid lg:grid-cols-2 gap-8 px-8 py-8 border rounded-xl mb-8">
         <div>
           <img src="assets/feni.png" alt="">
         </div>
@@ -132,9 +130,7 @@
           <button id="add-money-btn-2" class="bg-blog_btn_color px-8 py-2 rounded-md text-xl font-semibold w-full mt-4">Donate Now</button>
         </div>
       </div>
-    </section>
 
-    <section class="max-w-screen-lg mx-auto mb-16">
       <div class="grid lg:grid-cols-2 gap-8 px-8 py-8 border rounded-xl">
         <div>
           <img src="assets/quota-protest.png" alt="">
@@ -158,6 +154,11 @@
           </div>
           <button id="add-money-btn-3" class="bg-blog_btn_color px-8 py-2 rounded-md text-xl font-semibold w-full mt-4">Donate Now</button>
         </div>
+      </div>
+    </section>
+    <section id="donate-section" class="hidden max-w-screen-lg mx-auto mb-16">
+      <div id="donate-history">
+
       </div>
     </section>
   </main>
