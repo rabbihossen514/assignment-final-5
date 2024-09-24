@@ -12,6 +12,11 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- google font CDN -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,14 +44,15 @@
 </head>
 
 <!-- header section -->
+
 <body class="font-cabin max-w-screen-xl mx-auto border">
   <!-- header section -->
-  <header class="max-w-screen-xl mx-auto bg-nav_background_color sticky top-0">
+  <header class="max-w-screen-xl mx-auto bg-nav_background_color sticky top-0 z-10">
     <!-- navigation menubar -->
     <nav class="max-w-screen-lg mx-auto flex justify-between items-center py-6 px-3">
       <div class="">
         <a href="index.html">
-            <button class="bg-blog_btn_color lg:px-8 px-2 py-2 rounded-md text-xl font-semibold">Home</button>
+          <button class="bg-blog_btn_color lg:px-8 px-2 py-2 rounded-md text-xl font-semibold">Home</button>
         </a>
       </div>
       <div class="lg:flex items-center gap-4">
@@ -67,8 +73,58 @@
     </nav>
   </header>
 
-  <main>
-
+  <main class="">
+    <section id="home-main" class="max-w-screen-lg mx-auto mb-16 px-3">
+      <div class="flex gap-1 my-6">
+        <div>
+          <h2 class="text-4xl font-black">Important FAQ?</h2>
+        </div>
+        <div class="text-4xl font-black"><i class="fa-regular fa-circle-question"></i></div>
+      </div>
+      <div class="collapse collapse-arrow border rounded-t-lg rounded-none">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-medium text-common_light_color">What is the Document Object Model
+          (DOM)?</div>
+        <div class="collapse-content">
+          <p class="text-lg text-common_gray_color text-justify leading-6 px-4">The Document Object Model (DOM) is a
+            programming interface for web documents. It represents the page so that programs can change the document
+            structure, style, and content. The DOM represents the document as nodes and objects; that way, programming
+            languages can interact with the page.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border rounded-none">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-medium text-common_light_color">How do you select an element from the
+          DOM?</div>
+        <div class="collapse-content">
+          <p class="text-lg text-common_gray_color text-justify leading-6 px-4">The DOM Input select() method selects
+            all the text content of a textarea or an input element that contains the text field. Syntax: element.
+            select();</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border rounded-none">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-medium text-common_light_color">What is event delegation in the context
+          of the DOM, and why is it useful?</div>
+        <div class="collapse-content">
+          <p class="text-lg text-common_gray_color text-justify leading-6 px-4">Event delegation refers to the process
+            of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on
+            which the event originated. It allows us to attach a single event listener for elements that exist now or in
+            the future.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow border rounded-b-lg rounded-none">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-2xl font-medium text-common_light_color">How do you manipulate an element's
+          attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-lg text-common_gray_color text-justify leading-6 px-4">Changing an element's style (CSS)
+            attributes is one of the ways in which the DOM can be used. For example, in the code below, the onfocus
+            event handler method is used to change the 'input' element's style when the user clicks inside it. When this
+            event occurs, the element's background color will change to purple.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="max-w-screen-xl mx-auto bg-nav_background_color">
@@ -78,7 +134,7 @@
 
   <script src="js/common.js"></script>
   <script src="js/home.js"></script>
-  
+
 </body>
 
 </html>
